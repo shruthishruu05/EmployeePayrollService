@@ -2,6 +2,7 @@ package com.bridgelabz.employeepayrollapp.controllers;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -16,16 +17,19 @@ import org.springframework.web.bind.annotation.RestController;
 import com.bridgelabz.employeepayrollapp.dto.EmployeePayrollDTO;
 import com.bridgelabz.employeepayrollapp.dto.ResponseDTO;
 import com.bridgelabz.employeepayrollapp.model.EmployeePayrollData;
+import com.bridgelabz.employeepayrollapp.services.IEmployeePayrollService;
 
 @RestController
 @RequestMapping("/employeepayrollservice")
 public class EmployeePayrollController 
 {
+	@Autowired
+	private IEmployeePayrollService employeePayrollService;
 	
 	@RequestMapping({"","/","/get"})
 	public ResponseEntity<ResponseDTO>  getEmployeePayrollData(){
-		EmployeePayrollData employeePayrollData=null;
-		employeePayrollData= new EmployeePayrollData(1,new EmployeePayrollDTO("Shruthi", 3000));
+		List<EmployeePayrollData> employeePayrollData=null;
+		employeePayrollData = employeePayrollService.getEmployeePayrollData() ;
 		ResponseDTO respDTO=new ResponseDTO("Get call Success",employeePayrollData);
 		return new ResponseEntity<ResponseDTO>(respDTO,HttpStatus.OK);
 	}								
@@ -33,7 +37,7 @@ public class EmployeePayrollController
 	@GetMapping("/get/{empId}")
 	public ResponseEntity<ResponseDTO> getEmployeePayrollData(@PathVariable("empId") int empId){
 		EmployeePayrollData employeePayrollData=null;
-		employeePayrollData= new EmployeePayrollData(1,new EmployeePayrollDTO("Shruthi", 3000));
+		employeePayrollData= employeePayrollService.getEmployeePayrollDataById(empId);
 		ResponseDTO respDTO=new ResponseDTO("Get call for ID Success",employeePayrollData);
 		return new ResponseEntity<ResponseDTO>(respDTO,HttpStatus.OK);
 	}
@@ -42,7 +46,7 @@ public class EmployeePayrollController
 	public ResponseEntity<ResponseDTO> addEmployeePayrollData(@RequestBody EmployeePayrollDTO empPayrollDTO)
 	{
 		EmployeePayrollData employeePayrollData=null;
-		employeePayrollData= new EmployeePayrollData(1,empPayrollDTO);
+		employeePayrollData= employeePayrollService.createEmployeePayrollData(empPayrollDTO);
 		ResponseDTO respDTO=new ResponseDTO("Created Employee Payroll Data Successfully",employeePayrollData);
 		return new ResponseEntity<ResponseDTO>(respDTO,HttpStatus.OK);
 	}
@@ -50,7 +54,7 @@ public class EmployeePayrollController
 	@PutMapping("/update") 
 	public ResponseEntity<ResponseDTO> updateEmployeePayrollData(@RequestBody EmployeePayrollDTO empPayrollDTO){
 		EmployeePayrollData employeePayrollData=null;
-		employeePayrollData= new EmployeePayrollData(1,empPayrollDTO);
+		employeePayrollData= employeePayrollService.updatedEmployeePayrollData(empPayrollDTO);
 		ResponseDTO respDTO=new ResponseDTO("Updated Employee Payroll Data Successfully",employeePayrollData);
 		return new ResponseEntity<ResponseDTO>(respDTO,HttpStatus.OK);
 	}
