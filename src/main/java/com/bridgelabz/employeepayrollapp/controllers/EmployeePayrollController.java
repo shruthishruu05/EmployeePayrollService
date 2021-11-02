@@ -15,7 +15,8 @@ import com.bridgelabz.employeepayrollapp.dto.EmployeePayrollDTO;
 
 @RestController
 @RequestMapping("/employeepayrollservice")
-public class EmployeePayrollController {
+public class EmployeePayrollController 
+{
 	
 	@RequestMapping({"","/","/get"})
 	public ResponseEntity<String>  getEmployeePayrollData(){
