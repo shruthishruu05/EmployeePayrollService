@@ -46,3 +46,76 @@
 2021-11-03 22:13:43.119  WARN 21222 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2021-11-03 22:13:43.347  INFO 21222 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 2.129 seconds (JVM running for 2.639)
 2021-11-03 22:13:43.349  INFO 21222 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App Started
+2021-11-03 22:21:57.287  INFO 21222 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 17 on shruthim-Latitude-5511 with PID 21222 (/home/shruthim/Spring-Workspace/EmployeePayrollApp/target/classes started by shruthim in /home/shruthim/Spring-Workspace/EmployeePayrollApp)
+2021-11-03 22:21:57.287 DEBUG 21222 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-03 22:21:57.287  INFO 21222 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following profiles are active: dev
+2021-11-03 22:21:57.489  WARN 21222 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 22:21:57.554  INFO 21222 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 0.289 seconds (JVM running for 496.846)
+2021-11-03 22:21:57.556  INFO 21222 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App Started
+2021-11-03 22:26:09.706  INFO 22033 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 17 on shruthim-Latitude-5511 with PID 22033 (/home/shruthim/Spring-Workspace/EmployeePayrollApp/target/classes started by shruthim in /home/shruthim/Spring-Workspace/EmployeePayrollApp)
+2021-11-03 22:26:09.706 DEBUG 22033 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-03 22:26:09.707  INFO 22033 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following profiles are active: dev
+2021-11-03 22:26:11.350  WARN 22033 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 22:26:11.553  WARN 22033 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-11-03 22:26:11.579 ERROR 22033 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-11-03 22:26:29.225  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 17 on shruthim-Latitude-5511 with PID 22115 (/home/shruthim/Spring-Workspace/EmployeePayrollApp/target/classes started by shruthim in /home/shruthim/Spring-Workspace/EmployeePayrollApp)
+2021-11-03 22:26:29.226 DEBUG 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-03 22:26:29.226  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following profiles are active: dev
+2021-11-03 22:26:30.909  WARN 22115 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 22:26:31.124  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 2.13 seconds (JVM running for 2.614)
+2021-11-03 22:26:31.126  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App Started in COMMON Environment
+2021-11-03 22:26:59.614  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 17 on shruthim-Latitude-5511 with PID 22115 (/home/shruthim/Spring-Workspace/EmployeePayrollApp/target/classes started by shruthim in /home/shruthim/Spring-Workspace/EmployeePayrollApp)
+2021-11-03 22:26:59.615 DEBUG 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-03 22:26:59.615  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following profiles are active: dev
+2021-11-03 22:26:59.849  WARN 22115 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 22:26:59.913  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 0.326 seconds (JVM running for 31.403)
+2021-11-03 22:26:59.915  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App Started in DEV Environment
+2021-11-03 22:28:04.446  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 17 on shruthim-Latitude-5511 with PID 22115 (/home/shruthim/Spring-Workspace/EmployeePayrollApp/target/classes started by shruthim in /home/shruthim/Spring-Workspace/EmployeePayrollApp)
+2021-11-03 22:28:04.447 DEBUG 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-03 22:28:04.447  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following profiles are active: dev
+2021-11-03 22:28:04.662  WARN 22115 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 22:28:04.742  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 0.312 seconds (JVM running for 96.232)
+2021-11-03 22:28:04.743  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App Started in DEV Environment
+2021-11-03 22:28:15.213  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 17 on shruthim-Latitude-5511 with PID 22115 (/home/shruthim/Spring-Workspace/EmployeePayrollApp/target/classes started by shruthim in /home/shruthim/Spring-Workspace/EmployeePayrollApp)
+2021-11-03 22:28:15.213 DEBUG 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-03 22:28:15.213  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following profiles are active: dev
+2021-11-03 22:28:15.398  WARN 22115 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 22:28:15.459  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 0.265 seconds (JVM running for 106.95)
+2021-11-03 22:28:15.460  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App Started in COMMON Environment
+2021-11-03 22:29:34.002  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 17 on shruthim-Latitude-5511 with PID 22115 (/home/shruthim/Spring-Workspace/EmployeePayrollApp/target/classes started by shruthim in /home/shruthim/Spring-Workspace/EmployeePayrollApp)
+2021-11-03 22:29:34.002 DEBUG 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-03 22:29:34.003  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following profiles are active: dev
+2021-11-03 22:29:34.200  WARN 22115 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 22:29:34.267  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 0.282 seconds (JVM running for 185.757)
+2021-11-03 22:29:34.268  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App Started in COMMON Environment
+2021-11-03 22:29:44.762  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 17 on shruthim-Latitude-5511 with PID 22115 (/home/shruthim/Spring-Workspace/EmployeePayrollApp/target/classes started by shruthim in /home/shruthim/Spring-Workspace/EmployeePayrollApp)
+2021-11-03 22:29:44.762 DEBUG 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-03 22:29:44.762  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following profiles are active: dev
+2021-11-03 22:29:44.967  WARN 22115 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 22:29:45.026  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 0.286 seconds (JVM running for 196.517)
+2021-11-03 22:29:45.028  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App Started in COMMON Environment
+2021-11-03 22:29:55.495  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 17 on shruthim-Latitude-5511 with PID 22115 (/home/shruthim/Spring-Workspace/EmployeePayrollApp/target/classes started by shruthim in /home/shruthim/Spring-Workspace/EmployeePayrollApp)
+2021-11-03 22:29:55.496 DEBUG 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-03 22:29:55.496  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following profiles are active: dev
+2021-11-03 22:29:55.658  WARN 22115 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 22:29:55.707  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 0.228 seconds (JVM running for 207.197)
+2021-11-03 22:29:55.708  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App Started in COMMON Environment
+2021-11-03 22:30:34.222  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Starting EmployeePayrollAppApplication using Java 17 on shruthim-Latitude-5511 with PID 22115 (/home/shruthim/Spring-Workspace/EmployeePayrollApp/target/classes started by shruthim in /home/shruthim/Spring-Workspace/EmployeePayrollApp)
+2021-11-03 22:30:34.223 DEBUG 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-03 22:30:34.223  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : The following profiles are active: dev
+2021-11-03 22:30:34.385  WARN 22115 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 22:30:34.451  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Started EmployeePayrollAppApplication in 0.249 seconds (JVM running for 245.941)
+2021-11-03 22:30:34.452  INFO 22115 --- [restartedMain] c.b.e.EmployeePayrollAppApplication      : Employee Payroll App Started in COMMON Environment
