@@ -14,6 +14,7 @@ import com.bridgelabz.employeepayrollapp.dto.ResponseDTO;
 
 @ControllerAdvice
 public class EmployeePayrollExceptionHandler {
+	
 	@ExceptionHandler(MethodArgumentNotValidException.class)
 	public ResponseEntity<ResponseDTO> handleMethodArgumentsNotValidException(MethodArgumentNotValidException exception) {
 		List<ObjectError> errorList = exception.getBindingResult().getAllErrors();
