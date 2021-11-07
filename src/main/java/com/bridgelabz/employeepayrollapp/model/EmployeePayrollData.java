@@ -1,5 +1,6 @@
 package com.bridgelabz.employeepayrollapp.model;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import javax.persistence.CollectionTable;
@@ -29,7 +30,7 @@ public @Data class EmployeePayrollData {
 	private String name;
 	private long salary;
 	public String gender;
-	public String startDate;
+	public LocalDate startDate;
 	public String note;
 	public String profilePic;
 	
@@ -38,9 +39,11 @@ public @Data class EmployeePayrollData {
 	@Column(name="department")
 	public List<String> department;
 	
-	public EmployeePayrollData(int employeeId, EmployeePayrollDTO employeePayrollDTO) {
-		super();
-		this.employeeId = employeeId;
+	public EmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
+		this.updateEmployeePayrollData(employeePayrollDTO);
+	}
+	public void updateEmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
+		
 		this.name = employeePayrollDTO.name;
 		this.salary = employeePayrollDTO.salary;
 		this.gender = employeePayrollDTO.gender;
