@@ -36,7 +36,7 @@ public class EmployeePayrollService implements IEmployeePayrollService {
 	@Override
 	public void deleteEmployeePayrollData(int empId) {
 		EmployeePayrollData empData=this.getEmployeePayrollDataById(empId);
-		employeePayrollRepository.save(empData);
+		employeePayrollRepository.delete(empData);
 	}
 	
 	@Override
@@ -53,6 +53,12 @@ public class EmployeePayrollService implements IEmployeePayrollService {
 		empData.updateEmployeePayrollData(empPayrollDTO);
 		return employeePayrollRepository.save(empData);
 		
+	}
+
+	@Override
+	public List<EmployeePayrollData> findEmployeeByDepartment(String department) {
+		
+		return employeePayrollRepository.findEmployeeByDepartment(department);
 	}
 
 	
