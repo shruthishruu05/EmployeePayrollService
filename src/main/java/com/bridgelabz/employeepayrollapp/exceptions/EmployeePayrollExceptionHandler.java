@@ -28,7 +28,7 @@ public class EmployeePayrollExceptionHandler {
 		ResponseDTO responseDTO = new ResponseDTO(message,"Should have date in the format dd MMM yyyy");
 		return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.BAD_REQUEST);
 	}
-	
+
 	
 	@ExceptionHandler(MethodArgumentNotValidException.class)
 	public ResponseEntity<ResponseDTO> handleMethodArgumentsNotValidException(MethodArgumentNotValidException exception) {
